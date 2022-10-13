@@ -1,0 +1,161 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 28,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true
+  },
+  "editor.renderWhitespace": "boundary",
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "editor.codeLens": true,
+  "editor.snippetSuggestions": "top",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+
+  // 格式化配置
+
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // "source.fixAll": true,
+    // "source.organizeImports": false,
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "vue": "html",
+    "vue-html": "html"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    // "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "typescript.format.semicolons": "ignore",
+  "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "typescript.format.enable": false,
+  "prettier.singleQuote": true,
+  "editor.linkedEditing": true,
+  // 函数注释
+  "fileheader.cursorMode": {
+    // 默认字段
+    "description": ""
+  },
+  "fileheader.configObj": {
+    "createFileTime": false,
+    "language": {
+      "languagetest": {
+        "head": "/$$",
+        "middle": " $ @",
+        "end": " $/"
+      }
+    },
+    "autoAdd": false,
+    "autoAddLine": 100,
+    "autoAlready": true,
+    "annotationStr": {
+      "head": "/*",
+      "middle": " * @",
+      "end": " */",
+      "use": false
+    },
+    "headInsertLine": {
+      "php": 2,
+      "sh": 2
+    },
+    "beforeAnnotation": {
+      "文件后缀": "该文件后缀的头部注释之前添加某些内容"
+    },
+    "afterAnnotation": {
+      "文件后缀": "该文件后缀的头部注释之后添加某些内容"
+    },
+    "specialOptions": {
+      "特殊字段": "自定义比如LastEditTime/LastEditors"
+    },
+    "switch": {
+      "newlineAddAnnotation": true
+    },
+    "supportAutoLanguage": [],
+    "prohibitAutoAdd": ["json"],
+    "folderBlacklist": ["node_modules", "文件夹禁止自动添加头部注释"],
+    "prohibitItemAutoAdd": [
+      "项目的全称, 整个项目禁止自动添加头部注释, 可以使用快捷键添加"
+    ],
+    "moveCursor": true,
+    "dateFormat": "YYYY-MM-DD HH:mm:ss",
+    "atSymbol": ["@", "@"],
+    "atSymbolObj": {
+      "文件后缀": ["头部注释@符号", "函数注释@符号"]
+    },
+    "colon": [": ", ": "],
+    "colonObj": {
+      "文件后缀": ["头部注释冒号", "函数注释冒号"]
+    },
+    "filePathColon": "路径分隔符替换",
+    "showErrorMessage": false,
+    "writeLog": false,
+    "wideSame": false,
+    "wideNum": 13,
+    "functionWideNum": 0,
+    "CheckFileChange": false,
+    "createHeader": false,
+    "useWorker": false,
+    "designAddHead": false,
+    "headDesignName": "random",
+    "headDesign": false,
+    "cursorModeInternal": false,
+    "cursorModeInternalAll": {},
+    "openFunctionParamsCheck": true,
+    "functionParamsShape": ["{", "}"],
+    "functionBlankSpace": 0,
+    "functionTypeSymbol": "*",
+    "typeParamOrder": "type param"
+  },
+  "pubLang.indicatePackage": {},
+  "turboConsoleLog.delimiterInsideMessage": "~ ",
+  "turboConsoleLog.logMessagePrefix": "🚀custom-order-plugin ",
+  "workbench.colorTheme": "Blueberry dark theme",
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "/Users/renweijun/.leetcode",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.guides.bracketPairs": true,
+  "glsllint.glslangValidatorPath": "/Users/renweijun/Documents/glslang/bin/glslangValidator",
+  "security.workspace.trust.enabled": false,
+
+  "glsllint.additionalStageAssociations": {
+    ".fs.glsl": "frag",
+    ".vs.glsl": "vert",
+    ".tes.glsl": "tese",
+    ".tcs.glsl": "tesc",
+    ".gs.glsl": "geom"
+  },
+  "leetcode.defaultLanguage": "javascript"
+}
