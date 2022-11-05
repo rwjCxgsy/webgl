@@ -1,17 +1,14 @@
-attribute vec4 a_position;
-attribute vec2 a_texCoord;
+  attribute vec4 a_position;
+  attribute vec3 a_normal;
+  uniform mat4 u_projection;
+  uniform mat4 u_inverse;
 
-uniform mat4 projection;
+  attribute vec2 a_texCoord;
+  varying vec2 v_texCoord;
 
-uniform vec2 u_resolution;
-
-varying vec2 v_texCoord;
-
-void main () {
-  vec2 zeroToOne = a_position.xy / u_resolution;
-  vec2 zeroToTwo = zeroToOne * 2.0;
-  vec2 clipSpace = zeroToTwo - 1.0;
-  gl_Position = projection * a_position;
-  v_texCoord = a_texCoord;
-}
-
+  varying vec3 v_normal;
+  void main() {
+    gl_Position = u_projection * u_inverse * a_position;
+    v_texCoord = a_texCoord;
+    v_normal = a_normal;
+  }

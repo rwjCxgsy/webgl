@@ -1,13 +1,16 @@
   precision mediump float;
-  uniform vec4 u_color;
+  uniform sampler2D u_image;
+  uniform vec2 u_textureSize;
+  varying vec2 v_texCoord;
 
-  // our texture
-uniform sampler2D u_image;
 
-// the texCoords passed in from the vertex shader.
-varying vec2 v_texCoord;
-  void main() {
-    // gl_FragColor is a special variable a fragment shader
-    // is responsible for setting
-    gl_FragColor = texture2D(u_image, v_texCoord); // return redish-purple
+  varying vec3 v_normal;
+
+  void main(){
+    vec3 lightPosition = vec3(0.5, 0.7, 1.0);
+    vec3 normal = normalize(v_normal);
+    float light = dot(lightPosition, normal);
+    gl_FragColor = vec4(0.2, 1, 0.2, 1.0);
+    gl_FragColor.rgb *= light;
+
   }

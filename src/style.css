@@ -1,13 +1,17 @@
+h1,
+p {
+  font-family: Lato;
+}
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 html,
 body {
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
-}
-
-#webgl-canvas {
-  outline: none;
 }
